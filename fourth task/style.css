@@ -1,0 +1,603 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*header section*/
+.header {
+  background-image: url(images/header.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.logo {
+  float: left;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.header .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #333333;
+  padding: 20px;
+  z-index: 3;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .logo a {
+  color: #ff305b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .links a:hover {
+  color: #ff305b;
+}
+
+.links {
+  float: right;
+}
+.links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px;
+}
+.links li {
+  float: left;
+  padding: 0 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.header .header-content h1 {
+  font-size: 50px;
+  margin: 0;
+  color: #ff305b;
+  font-weight: bold;
+}
+.header .header-content h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.header .header-content h4 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+}
+
+
+
+
+/* about section*/
+
+
+
+
+.about {
+  padding: 70px 0 ;
+
+  width: 100%;
+ 
+}
+.about .about-left {
+  float: left;
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.about .about-content {
+  float: right;
+  width: 60%;
+  padding-left: 50px;
+}
+
+.about .about-content .left-list {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.about .about-content .right-list {
+  float: right;
+  width: 50%;
+}
+.about .about-content p {
+  border-bottom: 1px dashed #ddd;
+  padding: 30px 0;
+  color: grey;
+}
+
+.about .about-content h2 {
+    padding-left: 10px;
+  color: #333333;
+  font-size: bold;
+  border-left: 5px solid #ff305b;
+}
+.about .about-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
+.about .about-content ul li{
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: rgb(85,85,85 );
+    font-weight: 400;
+    line-height: 1;
+}
+
+.about .about-content .btn{
+    background-color: #ff305b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about .about-content .btn i{
+    margin-right: 5px;
+}
+.about .about-content .btn:hover{
+    background-color: #EC2403;
+}
+
+.about .about-caption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: top 0.5s ;
+}
+
+.about .about-left:hover .about-caption {
+  top: 0;
+}
+
+.about .about-caption i
+{
+    position: relative;
+    top: 45%;
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+}
+.about .about-caption i:hover{
+    color: #ff305b;
+    cursor: pointer;
+}
+
+
+.img-frame {
+  border: 8px solid #333;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+}
+
+.img-frame img {
+  display: block;
+  position: relative;
+  bottom: -20px;
+  right: -20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+
+
+/*our sevices section*/
+
+
+
+.our-section{
+  padding: 50px 0;
+  background-color: #F1F1F1;
+}
+.our-section .our-header{
+  text-align: center;
+  margin-bottom:50px ;
+}
+.our-section .our-header h2{
+  color: #333333;
+  font-size: bold;
+  font-size: 40px;
+}
+
+.our-section .our-content{
+  margin-bottom: 50px;
+}
+.our-section .our-content .our-item{
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+  text-align: center;
+}
+.our-section .our-content .our-item h3{
+  color: #333333;
+  font-size: bold;
+}
+
+.our-section .inner{
+  
+  padding: 40px 15px;
+}
+
+.our-section .inner i{
+  color: #ff305b;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.our-section .our-item:hover .inner{
+  background-color: white;
+
+}
+.our-section .our-item:hover .inner i{
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+
+
+/*our portfolio section*/
+
+.portfolio{
+
+}
+
+.portfolio .portfolio-header{
+  
+}
+.portfolio .portfolio-header h2{
+  color: #333333;
+  font-size: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.portfolio .portfolio-content{
+margin-bottom: 50px;
+  text-align: center;
+}
+
+.portfolio .portfolio-content button{
+  background-color: transparent;
+  color: gray;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+
+
+.portfolio .portfolio-images{
+
+  margin: -10px;
+}
+.portfolio .portfolio-images .item{
+  float: left;
+  width: 33.33%;
+  position: relative;
+  padding: 10px;
+
+
+}
+.portfolio .portfolio-images .item img{
+  width:100%;
+  position: relative;
+  display: block;
+}
+.portfolio .portfolio-images .inner{
+  position: relative;  
+  padding: 0;         
+  overflow: hidden;
+  
+
+}
+
+.overlayy{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.portfolio .portfolio-images .item:hover .overlayy{
+  opacity: 0.7;
+}
+
+
+
+
+/*ostatus section*/
+
+
+.status{
+  background-color: #F1F1F1;
+  padding: 50px 0;
+  font-size: 20px;
+  margin :50px 0;
+}
+.status .item{
+  float: left;
+  width: 25%;
+  padding: 50px 0;
+  text-align: center;
+}
+.status .item i{
+  color: #ff305b;
+}
+
+
+
+/*feedback section*/
+
+.feedback{
+  padding:100px 0;
+}
+.feedback .feedback-header{
+  text-align: center;
+
+}
+.feedback .feedback-header h2{
+  color: #333333;
+  font-size: bold;
+  font-size: 40px;
+}
+
+.feedback .feedback-card{
+
+  background-image: linear-gradient(135deg,#FF305B 17%,#F1F1F1 17%);
+  width: 70%;
+  margin: 40px auto;
+  padding: 20px;
+}
+.feedback .feedback-img{
+  float: left;
+
+  width: 20%;
+}
+
+.feedback .feedback-img img{
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+
+}
+.feedback .feedback-content{
+  float: right;
+  width: 80%;
+  padding: 0 20px;
+
+}
+
+.feedback .feedback-content i{
+  color: #F1C30D;
+}
+
+
+
+
+/*blog section*/
+
+.blog{
+  background-color:#f1f1f2 ;
+  padding: 30px 0;
+}
+
+.blog .blog-header{
+  text-align: center;
+  margin: 50px 0;
+}
+.blog .blog-header h2{
+  color: #333333;
+  font-size: bold;
+  font-size: 40px;
+}
+.blog .blog-card{
+
+  margin-bottom: 40px;
+}
+.blog .blog-card .item{
+  float: left;
+  width:33.3%;
+  padding: 10px;
+
+}
+.blog .blog-card .inner{
+  
+  background-color: white;
+
+}
+.blog .blog-card .inner img{
+  width: 100%;
+  display: block;
+}
+.blog .blog-card .inner iframe{
+  width: 100%;
+  
+}
+.item-content{
+  padding: 20px;
+}
+.item-content p{
+  color: #333333;
+  margin-bottom: 10px;
+}
+.item-content a{
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog .blog-card a:hover{
+  color: #ff305b;
+  transition: all 0.3s;
+}
+
+
+
+/*contact section*/
+
+
+.contact .contact-header{
+  text-align: center;
+  margin: 50px 0;
+}
+.contact .contact-header h2{
+   color: #333333;
+  font-size: bold;
+  font-size: 40px;
+}
+.contact .contact-card{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact .contact-card .item{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.contact .contact-card .item input{
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.second-row{
+
+  width: 100%;
+  padding: 10px;
+
+}
+.second-row input{
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.third-row{
+  width: 100%;
+  padding: 10px;
+}
+.third-row textarea{
+  width: 100%;
+  display: block;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .contact-card .item input[type="submit"]{
+  background-color: #ff305b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact .btn{
+  margin-bottom: 40px;
+}
+.contact button{
+   background-color: #ff305b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact button:hover{
+  background-color: #EC2403;
+}
+
+.footer
+{
+  background-color: #333333;
+}
+.footer .footer-content{
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+.footer .footer-content a{
+  color: #ffff;
+  text-decoration: none;
+}
+.footer .footer-content ul{
+  list-style-type: none;
+}
+.footer .footer-content li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer .footer-content p a{
+  color: #ff305b;
+}
